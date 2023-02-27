@@ -53,11 +53,11 @@ files=$(ls -a maps/maps_buged)
 total_tests=$(echo "$files" | wc -l)
 
 # Step 1bis: Make program
-clear && make re && clear
+clear && make re -C ../ && clear
 
 # Step 2 and 3: Launch the program with valgrind and write into log file
 for file in $files; do
-	(
+	#(
 		full_path="maps/maps_buged/$file"
     	# Print the filename in blue
     	echo -e "${COLOR_BLUE}===============================${COLOR_RESET}"
@@ -127,11 +127,11 @@ for file in $files; do
 		progress_bar+="${COLOR_RESET}"
     	echo -e "Progress: [${progress_bar}] ${progress}%"
 		#printf "] %d%%\n" $((passed_tests * 100 / total_tests))
-	) &
+	#) &
 done
 
 # Wait for all tests to complete
-wait
+#wait
 
 # Step Final: Update rights of one map and oen texture to test the error message
 chmod 777 maps/maps_buged/no_rigts.cub

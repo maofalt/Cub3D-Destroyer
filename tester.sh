@@ -43,9 +43,9 @@ rm -rf logs
 mkdir logs
 
 # Step 0-bis: Update rights of one map and oen texture to test the error message
-chmod 000 maps/maps_buged/no_rigts.cub
-chmod 000 maps/maps_buged/no_rights_no_extension
-chmod 000 textures/invalid_textures/protected_texture.xpm
+chmod 000 Cub3D-Destroyer/maps/maps_buged/no_rigts.cub
+chmod 000 Cub3D-Destroyer/maps/maps_buged/no_rights_no_extension
+chmod 000 Cub3D-Destroyer/textures/invalid_textures/protected_texture.xpm
 
 # Step 1: Retrieve all files and count the number of  files
 dir_path="maps/maps_buged/"
@@ -54,18 +54,19 @@ total_tests=$(echo "$files" | wc -l)
 
 # Step 1bis: Make program
 clear && make re -C ../ && clear
+cd ..
 
 # Step 2 and 3: Launch the program with valgrind and write into log file
 for file in $files; do
 	#(
-		full_path="maps/maps_buged/$file"
+		full_path="Cub3D-Destroyer/maps/maps_buged/$file"
     	# Print the filename in blue
     	echo -e "${COLOR_BLUE}===============================${COLOR_RESET}"
 		echo -e "${COLOR_BLUE}$(printf '%b' "${FORMAT_BOLD}Testing $full_path:${FORMAT_RESET}")${COLOR_RESET}"
     	echo -e "${COLOR_BLUE}===============================${COLOR_RESET}"
 
     	# Launch the program with valgrind
-    	output=$(valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes ./../cub3D "$full_path" 2>&1)
+    	output=$(valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes ./cub3D "$full_path" 2>&1)
 		#check if the file start with valid to know if we should expect an error or not
     	if [[ "$file" == "valid_"* ]]; then
 
@@ -134,9 +135,9 @@ done
 #wait
 
 # Step Final: Update rights of one map and oen texture to test the error message
-chmod 777 maps/maps_buged/no_rigts.cub
-chmod 777 maps/maps_buged/no_rights_no_extension
-chmod 777 textures/invalid_textures/protected_texture.xpm
+chmod 777 Cub3D-Destroyer/maps/maps_buged/no_rigts.cub
+chmod 777 Cub3D-Destroyer/maps/maps_buged/no_rights_no_extension
+chmod 777 Cub3D-Destroyer/textures/invalid_textures/protected_texture.xpm
 
 sleep 5
 # Print a new line after the progress bar

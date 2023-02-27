@@ -11,5 +11,7 @@ As well, if a map start "valid_*.cub" it means that in my case it should write n
 You can include maps in the maps_buged part if you want to test additional cases that suit your program.
 
 git clone git@github.com:maofalt/Cub3D-Destroyer.git
+
 cd Cub3D-Destroyer
+
 bash tester.sh

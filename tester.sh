@@ -65,7 +65,7 @@ for file in $files; do
     	echo -e "${COLOR_BLUE}===============================${COLOR_RESET}"
 
     	# Launch the program with valgrind
-    	output=$(valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes ./cub3D "$full_path" 2>&1)
+    	output=$(valgrind --leak-check=full --show-leak-kinds=all --track-fds=yes ./../cub3D "$full_path" 2>&1)
 		#check if the file start with valid to know if we should expect an error or not
     	if [[ "$file" == "valid_"* ]]; then
 

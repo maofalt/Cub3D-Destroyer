@@ -1,6 +1,6 @@
-NO textures/south.xpm
-SO textures/west.xpm
-WE textures/east.xpm
+NO Cub3D-Destroyer/textures/south.xpm
+SO Cub3D-Destroyer/textures/west.xpm
+WE Cub3D-Destroyer/textures/east.xpm
 EA 
 
 F 0,0,1

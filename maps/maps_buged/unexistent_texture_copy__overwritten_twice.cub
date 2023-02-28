@@ -1,7 +1,7 @@
-NO textures/south.xpm
-SO textures/west.xpm
+NO Cub3D-Destroyer/textures/south.xpm
+SO Cub3D-Destroyer/textures/west.xpm
 WE 
-EA textures/east.xpm
+EA Cub3D-Destroyer/textures/east.xpm
 
 F 0,0,1
 C 225,30,0
@@ -9,7 +9,7 @@ EA
 
 
 
-EA textures/invalid_textures/protected_texture.xpm
+EA Cub3D-Destroyer/textures/invalid_Cub3D-Destroyer/textures/protected_texture.xpm
 
    1111111111111111111111111             111111111111
 1000000000110000000000001               11111111011111

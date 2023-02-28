@@ -1,7 +1,7 @@
-NORTH textures/north.xpm
-SO textures/south.xpm
-WE textures/west.xpm
-EA textures/east.xpm
+NORTH Cub3D-Destroyer/textures/north.xpm
+SO Cub3D-Destroyer/textures/south.xpm
+WE Cub3D-Destroyer/textures/west.xpm
+EA Cub3D-Destroyer/textures/east.xpm
 
 F 0,0,1
 C 225,30,0

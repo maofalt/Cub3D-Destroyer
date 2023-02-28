@@ -1,7 +1,7 @@
-SO textures/south.xpm
-NO textures/invalid_textures/protected_texture.xpm
-WE textures/west.xpm
-EA textures/east.xpm
+SO Cub3D-Destroyer/textures/south.xpm
+NO Cub3D-Destroyer/textures/invalid_Cub3D-Destroyer/textures/protected_texture.xpm
+WE Cub3D-Destroyer/textures/west.xpm
+EA Cub3D-Destroyer/textures/east.xpm
 
 F 0,0,1
 C 225,30,0

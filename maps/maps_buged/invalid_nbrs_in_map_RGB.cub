@@ -1,7 +1,7 @@
-NO ./textures/greystone.xpm
-SO ./textures/redbrick.xpm
-EA ./textures/wood.xpm
-WE ./textures/wood.xpm
+NO ./Cub3D-Destroyer/textures/greystone.xpm
+SO ./Cub3D-Destroyer/textures/redbrick.xpm
+EA ./Cub3D-Destroyer/textures/wood.xpm
+WE ./Cub3D-Destroyer/textures/wood.xpm
 
 C 255,200,00000000000000000000000000000000000000000000000000001
 F 122,122,122
